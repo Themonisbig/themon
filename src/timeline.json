@@ -1,0 +1,58 @@
+{
+  "_comment": "Single source of truth for timing (seconds). Read by src/*.tsx AND scripts/build_audio.py so picture and sound stay in sync. Re-run `npm run audio` after editing.",
+  "fps": 30,
+  "duration": 30,
+  "bpm": 120,
+  "scenes": {
+    "intro": [0, 2],
+    "green": [2, 5],
+    "gifts": [5, 8],
+    "red": [8, 11],
+    "ask": [11, 17],
+    "montage": [17, 22],
+    "winner": [22, 26],
+    "end": [26, 30]
+  },
+  "intro": {
+    "heartbeats": [0.15, 0.62, 1.05, 1.42, 1.74],
+    "headTurn": [0.35, 1.35],
+    "eyesGlow": 1.3
+  },
+  "gifts": {
+    "combo": [[5.5, 5], [6.4, 10], [7.2, 20]],
+    "drops": [5.15, 5.35, 5.6, 5.8, 6.0, 6.15, 6.35, 6.55, 6.7, 6.9, 7.05, 7.2, 7.35, 7.5, 7.65]
+  },
+  "red": {
+    "spin": [8.33, 8.8],
+    "scan": [8.85, 10.05],
+    "caught": 9.6,
+    "puff": 10.15
+  },
+  "ask": {
+    "comment": 11.25,
+    "zoom": [11.6, 16.8]
+  },
+  "montage": {
+    "phases": [
+      [17.0, "green", 100],
+      [18.0, "red", 47],
+      [18.5, "green", 47],
+      [19.5, "red", 12],
+      [20.0, "green", 12],
+      [21.0, "red", 3],
+      [21.5, "green", 3]
+    ],
+    "leaderboard": 19.95
+  },
+  "winner": {
+    "cross": 23.0
+  },
+  "end": {
+    "hit": 26.0
+  },
+  "musicStops": [[8.0, 17.0], [18.0, 18.5], [19.5, 20.0], [21.0, 21.5]],
+  "voice": [
+    {"id": "dont_move", "parts": ["Don't.", "move."], "gap": 0.28, "start": 0.42, "maxDur": 1.5},
+    {"id": "only_if", "parts": ["Only.", "if you send enough."], "gap": 0.32, "start": 12.55, "maxDur": 3.7}
+  ]
+}
