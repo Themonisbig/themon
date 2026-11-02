@@ -1,3 +1,4 @@
 node_modules/
 .voice/
 *.log
+out/_raw.mp4
